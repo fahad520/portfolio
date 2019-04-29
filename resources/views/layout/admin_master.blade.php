@@ -19,8 +19,16 @@
 
 
 </head>
-<body>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
 
+    {{-- header --}}
+    @yield('header')
+
+   {{-- slider --}}
+    @yield('slider')
+
+</div>
 
 {{-- Js Files --}}
 @includeIf('admin.assets.js')
