@@ -12,10 +12,10 @@
     @includeIf('admin.assets.css')
 
     {{-- Local css --}}
-    @yield('css')
+    @stack('css')
 
 </head>
-<body class="@yield('body_class')">
+<body id="page-top" class="@stack('class')">
 
 {{-- header --}}
 @yield('header')
@@ -30,7 +30,7 @@
 @includeIf('admin.assets.js')
 
 {{-- Local JS --}}
-@yield('js')
+@stack('js')
 
 </body>
 </html>

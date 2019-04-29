@@ -14,7 +14,7 @@
     @includeIf('assets/css')
 
     {{-- Local Css Section --}}
-    @yield('css')
+    @stack('css')
 </head>
 <body>
 {{-- Script if JS is not enabled --}}
@@ -60,7 +60,7 @@
 @includeIf('assets/js')
 
 {{-- Local Js Section --}}
-@yield('js')
+@stack('js')
 
 </body>
 </html>

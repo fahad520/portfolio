@@ -25,5 +25,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::namespace('admin')->group(function (){
-Route::get('/','DashboardController@index');
+Route::resource('/dashboard','DashboardController')->only('index');
+Route::resource('/fk-admin','LoginController')->only('index');
 });

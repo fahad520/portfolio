@@ -2,9 +2,6 @@
 @section('title')
     Dashboard
 @endsection
-@section('body_class')
-    page-top
-@endsection
 @section('header')
     @includeIf('admin.includes.header')
 @endsection
