@@ -1,13 +1,19 @@
 @extends('layout.admin_master')
+@section('title')
+    Dashboard
+@endsection
+@section('body_class')
+    page-top
+@endsection
 @section('header')
     @includeIf('admin.includes.header')
 @endsection
-@section('slider')
+@section('content')
+    <div id="wrapper">
     @includeIf('admin.includes.slider')
+    @includeIf('admin.includes.dashboard_content')
+    </div>
 @endsection
-@section('js')
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-        $.widget.bridge('uibutton', $.ui.button);
-    </script>
+@section('footer')
+    @includeIf('admin.includes.footer')
 @endsection

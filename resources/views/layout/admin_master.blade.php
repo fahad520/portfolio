@@ -14,21 +14,17 @@
     {{-- Local css --}}
     @yield('css')
 
-    {{-- Header JS --}}
-    @includeIf('admin.assets.head_js')
-
-
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+<body class="@yield('body_class')">
 
-    {{-- header --}}
-    @yield('header')
+{{-- header --}}
+@yield('header')
 
-   {{-- slider --}}
-    @yield('slider')
+{{-- Content Wrapper --}}
+@yield('content')
 
-</div>
+{{-- footer --}}
+@yield('footer')
 
 {{-- Js Files --}}
 @includeIf('admin.assets.js')
