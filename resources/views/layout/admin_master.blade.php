@@ -15,7 +15,7 @@
     @yield('css')
 
     {{-- Header JS --}}
-    @includeIf('admin.admin.assets.head_js')
+    @includeIf('admin.assets.head_js')
 
 
 </head>
