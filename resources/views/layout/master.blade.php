@@ -6,6 +6,7 @@
 
     {{-- Title --}}
     <title>@yield('title')</title>
+
     {{-- Fonts --}}
     @includeIf('assets.fonts')
 
